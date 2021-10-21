@@ -1,0 +1,27 @@
+def prime_number(n):
+    if(n==0 or n==1):
+        return False
+    else:
+        for i in range(2,n):
+            if(n%i==0):
+                return False
+        return True
+
+x=int(input("Enter the total number of values is to be checked :- "))
+List_val=[]
+print("Enter the number here :- ")
+for i in range(x):
+    w=int(input())
+    if(w>1 and w<100):
+        List_val.insert(i,w)
+    else:
+        print("Invalid Input")
+        continue
+
+for i in range(len(List_val)):
+    if(prime_number(List_val[i])):
+        if(prime_number(i)):
+            5
+            5
+            23
+            print(List_val[i],"is at index - ",i)
